@@ -1,0 +1,82 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "creation": "2024-03-01 22:00:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "fields": [
+        {
+            "fieldname": "klinik",
+            "fieldtype": "Link",
+            "label": "Klinik",
+            "options": "Denta Klinik",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "pasien",
+            "fieldtype": "Link",
+            "label": "Pasien",
+            "options": "Denta Pasien",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "dokter",
+            "fieldtype": "Link",
+            "label": "Dokter Gigi",
+            "options": "Denta Dokter",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "tgl_konsul",
+            "fieldtype": "Date",
+            "label": "Tanggal Konsul",
+            "reqd": 1,
+            "in_list_view": 1
+        },
+        {
+            "fieldname": "jam",
+            "fieldtype": "Time",
+            "label": "Jam"
+        },
+        {
+            "fieldname": "keluhan",
+            "fieldtype": "Small Text",
+            "label": "Keluhan"
+        },
+        {
+            "fieldname": "status",
+            "fieldtype": "Select",
+            "label": "Status",
+            "options": "Open\nWaiting\nCancelled\nIn Progress\nCompleted",
+            "default": "Open"
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2024-03-01 22:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "dentacloud",
+    "name": "Denta Pendaftaran",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "System Manager",
+            "share": 1,
+            "write": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+}

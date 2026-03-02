@@ -1,0 +1,65 @@
+{
+    "actions": [],
+    "allow_rename": 1,
+    "creation": "2024-03-01 21:00:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "fields": [
+        {
+            "fieldname": "nama_klinik",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "Nama Klinik",
+            "reqd": 1,
+            "unique": 1
+        },
+        {
+            "fieldname": "cabang_id",
+            "fieldtype": "Data",
+            "label": "ID Cabang (Short Code)",
+            "reqd": 1,
+            "description": "Contoh: IVY, BORMAN, JUN"
+        },
+        {
+            "fieldname": "alamat",
+            "fieldtype": "Small Text",
+            "label": "Alamat Klinik"
+        },
+        {
+            "fieldname": "no_telp",
+            "fieldtype": "Phone",
+            "label": "No Telepon"
+        },
+        {
+            "fieldname": "sheet_id_old",
+            "fieldtype": "Data",
+            "label": "Sheet ID (Referensi Lama)",
+            "description": "Gunakan ini untuk sinkronisasi data dari Google Sheets sebelumnya."
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2024-03-01 21:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "dentacloud",
+    "name": "Denta Klinik",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "export": 1,
+            "print": 1,
+            "read": 1,
+            "report": 1,
+            "role": "System Manager",
+            "share": 1,
+            "write": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+}
